@@ -3,11 +3,6 @@ using BoletosBus_CleanModularApp.Cliente.Application.Dtos;
 using BoletosBus_CleanModularApp.Cliente.Application.Interfaces;
 using BoletosBus_CleanModularApp.Cliente.Domain.Interfaces;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoletosBus_CleanModularApp.Cliente.Application.Services
 {
@@ -121,7 +116,6 @@ namespace BoletosBus_CleanModularApp.Cliente.Application.Services
             {
                 var cliente = new Domain.Entities.Cliente
                 {
-                    Id = clienteUpdateDto.IdCliente,
                     Nombre = clienteUpdateDto.Nombre,
                     Telefono = clienteUpdateDto.Telefono,
                     Email = clienteUpdateDto.Email,

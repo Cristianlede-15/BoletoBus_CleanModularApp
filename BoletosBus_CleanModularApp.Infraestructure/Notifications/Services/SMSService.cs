@@ -1,6 +1,4 @@
-﻿
-
-using BoletosBus_CleanModularApp.Infraestructure.Notifications.Interfaces;
+﻿using BoletosBus_CleanModularApp.Infraestructure.Notifications.Interfaces;
 
 namespace BoletosBus_CleanModularApp.Infraestructure.Notifications.Services
 {

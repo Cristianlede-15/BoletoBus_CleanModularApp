@@ -51,7 +51,7 @@ namespace BoletosBus_CleanModularApp.Cliente.Api.Controllers
         }
 
         // PUT api/<ClienteController>/5
-        [HttpPut("UpdateBus")]
+        [HttpPut("UpdateCliente")]
         public IActionResult post(BoletosBus_CleanModularApp.Cliente.Application.Dtos.ClienteUpdateDto clienteUpdateDto)
         {
             var result = _clienteService.UpdateCliente(clienteUpdateDto);
@@ -63,7 +63,7 @@ namespace BoletosBus_CleanModularApp.Cliente.Api.Controllers
         }
 
         // DELETE api/<ClienteController>/5
-        [HttpDelete("DeleteBus")]
+        [HttpDelete("DeleteCliente")]
         public IActionResult Delete(BoletosBus_CleanModularApp.Cliente.Application.Dtos.ClienteDeleteDto clienteDeleteDto)
         {
             var result = _clienteService.DeleteCliente(clienteDeleteDto);

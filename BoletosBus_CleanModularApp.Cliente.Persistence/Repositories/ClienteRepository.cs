@@ -1,11 +1,7 @@
 ﻿using BoletosBus_CleanModularApp.Cliente.Domain.Interfaces;
 using BoletosBus_CleanModularApp.Cliente.Persistence.Context;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
 {
@@ -21,25 +17,25 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
         }
         public List<Domain.Entities.Cliente> GetAll()
         {
-            return _context.Cliente.ToList();
+            return _context?.Cliente.ToList();
         }
 
         public Domain.Entities.Cliente GetEntityById(int id)
         {
             try 
             {
-                var cliente = _context.Cliente.Find(id);
+                var cliente = _context?.Cliente.Find(id);
 
                 if (cliente == null)
                 {
-                    this._logger.LogError("Error, cliente not found");
+                    this._logger?.LogError("Error, cliente not found");
                 }
                 return cliente;
 
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in GetEntityById");
+                _logger?.LogError(ex, "Error in GetEntityById");
                 return null;
             }
         }
@@ -50,13 +46,13 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
             {
                 if (entity is null) 
                 {
-                    this._logger.LogError("The entity cannot be null");
+                    this._logger?.LogError("The entity cannot be null");
                 }
                 var clienteEliminar = this._context.Cliente.Find(entity.Id);
 
                 if(clienteEliminar is null) 
                 {
-                    this._logger.LogError("Error, the entity is null");
+                            this._logger?.LogError("Error, the entity is null");
                 }
 
                 _context.Cliente.Remove(entity);
@@ -64,7 +60,7 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
             }
             catch(Exception ex) 
             {
-                this._logger.LogError("Error eliminando al cliente");
+                this._logger?.LogError("Error eliminando al cliente, " + ex.ToString());
             }
         }
 
@@ -74,13 +70,13 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
             {
                 if (entity is null) 
                 {
-                    this._logger.LogError("Error, the entity cannot be null");
+                    this._logger?.LogError("Error, the entity cannot be null");
                 }
-                _context.Cliente.Add(entity);
-                _context.SaveChanges();
-            } catch (Exception ex) 
+                _context?.Cliente.Add(entity);
+                _context?.SaveChanges();
+            } catch
             {
-                this._logger.LogError("Error guardando el cliente", ex.ToString());
+                this._logger?.LogError("Error guardando el cliente");
                 throw;
             }
         }
@@ -91,23 +87,27 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
             {
                 if (entity is null) 
                 {
-                    this._logger.LogError("The entity cannot be null");
+                    this._logger?.LogError("The entity cannot be null");
                 }
 
                 var clienteActualizar = this._context.Cliente.Find(entity.Id);
 
                 if(clienteActualizar is null) 
                 {
-                    this._logger.LogError("Error, the entity is null");
+                    this._logger?.LogError("Error, the entity is null");
                 }
 
-                clienteActualizar.Email = entity.Email;
-                clienteActualizar.Nombre = entity.Nombre;
-                clienteActualizar.Telefono = entity.Telefono;
+                clienteActualizar.Id = entity.Id;
+                clienteActualizar.Email = entity?.Email;
+                clienteActualizar.Nombre = entity?.Nombre;
+                clienteActualizar.Telefono = entity?.Telefono;
 
-            } catch (Exception ex) 
+                _context.Entry(clienteActualizar).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                _context.SaveChanges();
+
+            } catch 
             {
-                this._logger.LogError("Error actualizando al cliente", ex.ToString());
+                this._logger?.LogError("Error actualizando al cliente");
                 throw;
             }
         }

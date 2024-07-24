@@ -1,11 +1,6 @@
 ﻿using BoletosBus_CleanModularApp.Asiento.Domain.Interfaces;
 using BoletosBus_CleanModularApp.Asiento.Persistence.Context;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
 {

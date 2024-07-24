@@ -92,7 +92,6 @@ namespace BoletosBus_CleanModularApp.Asiento.Application.Services
             {
                 var asiento = new Domain.Entities.Asiento
                 {
-                    Id = asientoSaveDto.IdBus,
                     IdBus = asientoSaveDto.IdBus,
                     NumeroPiso = asientoSaveDto.NumeroPiso,
                     NumeroAsiento = asientoSaveDto.NumeroAsiento,

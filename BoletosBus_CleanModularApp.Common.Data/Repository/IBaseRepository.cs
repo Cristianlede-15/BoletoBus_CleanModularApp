@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BoletosBus_CleanModularApp.Common.Data.Repository
+﻿namespace BoletosBus_CleanModularApp.Common.Data.Repository
 {
     public interface IBaseRepository<TEntity, TTypeId> where TEntity : class
     {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BoletosBus_CleanModularApp.Cliente.Application.Base
+﻿namespace BoletosBus_CleanModularApp.Cliente.Application.Base
 {
     public class ServiceResult
     {
