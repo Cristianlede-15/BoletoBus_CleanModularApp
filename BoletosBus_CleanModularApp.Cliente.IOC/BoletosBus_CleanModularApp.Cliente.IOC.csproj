@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Cliente.Application\BoletosBus_CleanModularApp.Cliente.Application.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Cliente.Domain\BoletosBus_CleanModularApp.Cliente.Domain.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Cliente.Persistence\BoletosBus_CleanModularApp.Cliente.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

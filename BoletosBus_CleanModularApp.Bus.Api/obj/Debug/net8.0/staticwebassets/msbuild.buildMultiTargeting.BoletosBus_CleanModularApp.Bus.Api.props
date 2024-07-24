@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BoletosBus_CleanModularApp.Bus.Api.props" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\bin\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.deps.json
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\bin\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.dll
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\bin\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.pdb
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.AssemblyInfo.cs
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.sourcelink.json
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.dll
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\refint\BoletosBus_CleanModularApp.Infraestructure.dll
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\BoletosBus_CleanModularApp.Infraestructure.pdb
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Infraestructure\obj\Debug\net8.0\ref\BoletosBus_CleanModularApp.Infraestructure.dll

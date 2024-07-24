@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Asiento.Application\BoletosBus_CleanModularApp.Asiento.Application.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Asiento.Persistence\BoletosBus_CleanModularApp.Asiento.Persistence.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Bus.Application\BoletosBus_CleanModularApp.Bus.Application.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Bus.IOC\BoletosBus_CleanModularApp.Bus.IOC.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Bus.Persistence\BoletosBus_CleanModularApp.Bus.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Bus.Application\BoletosBus_CleanModularApp.Bus.Application.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Bus.Domain\BoletosBus_CleanModularApp.Bus.Domain.csproj" />
+    <ProjectReference Include="..\BoletosBus_CleanModularApp.Common.Data\BoletosBus_CleanModularApp.Common.Data.csproj" />
+  </ItemGroup>
+
+</Project>

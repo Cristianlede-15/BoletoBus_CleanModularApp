@@ -1,0 +1,6 @@
+@BoletosBus_CleanModularApp.Cliente.Api_HostAddress = http://localhost:5231
+
+GET {{BoletosBus_CleanModularApp.Cliente.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
