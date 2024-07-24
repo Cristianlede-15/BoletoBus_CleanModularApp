@@ -1,8 +1,3 @@
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.AssemblyInfoInputs.cache
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.AssemblyInfo.cs
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.csproj.CoreCompileInputs.cache
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.sourcelink.json
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\bin\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.deps.json
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\bin\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.dll
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\bin\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.pdb
@@ -11,6 +6,11 @@ C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.C
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\bin\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Domain.pdb
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.pdb
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.AssemblyInfo.cs
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.sourcelink.json
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosB.AE0EE87C.Up2Date
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\BoletosBus_CleanModularApp.Cliente.Application.dll
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Cliente.Application\obj\Debug\net8.0\refint\BoletosBus_CleanModularApp.Cliente.Application.dll

@@ -22,7 +22,6 @@ namespace BoletosBus_CleanModularApp.Asiento.Domain.Entities
         public DateTime? FechaCreacion { get; set; }
 
         public DateTime? FechaModificacion { get; set; }
-        public object? CapacidadTotal { get; set; }
-        public object? Disponible { get; set; }
+        public bool? Disponible { get; set; }
     }
 }

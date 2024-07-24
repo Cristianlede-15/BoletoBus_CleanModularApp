@@ -1,11 +1,11 @@
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.deps.json
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.dll
+C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.pdb
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.AssemblyInfoInputs.cache
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.AssemblyInfo.cs
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.sourcelink.json
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.deps.json
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.dll
-C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\bin\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.pdb
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.dll
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\refint\BoletosBus_CleanModularApp.Common.Data.dll
 C:\Users\pc\source\repos\BoletosBus_CleanModularApp\BoletosBus_CleanModularApp.Common.Data\obj\Debug\net8.0\BoletosBus_CleanModularApp.Common.Data.pdb

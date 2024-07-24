@@ -12,7 +12,7 @@ namespace BoletosBus_CleanModularApp.Common.Data.Repository
         void Update(TEntity entity);
         void Remove(TEntity entity);
         List<TEntity> GetAll();
-        TEntity GetEntityById(TTypeId id);
+        TEntity? GetEntityById(TTypeId id);
 
     }
 }

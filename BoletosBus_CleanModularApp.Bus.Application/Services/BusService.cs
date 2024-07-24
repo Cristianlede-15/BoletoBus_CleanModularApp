@@ -23,14 +23,14 @@ namespace BoletosBus_CleanModularApp.Bus.Application.Services
             try
             {
                 var busEliminar = _busRepository.GetEntityById(busDeleteDto.IdBus);
-                _busRepository.Remove(busEliminar);
+                _busRepository?.Remove(busEliminar);
                 result.Success = true;
                 result.Message = "Bus deleted";
                 return result;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in DeleteBus");
+                _logger?.LogError(ex, "Error in DeleteBus");
                 result.Success = false;
                 result.Message = "Error in DeleteBus";
                 return result;
@@ -54,7 +54,7 @@ namespace BoletosBus_CleanModularApp.Bus.Application.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in GetBusById");
+                _logger?.LogError(ex, "Error in GetBusById");
                 result.Success = false;
                 result.Message = "Error in GetBusById";
                 return result;
@@ -78,7 +78,7 @@ namespace BoletosBus_CleanModularApp.Bus.Application.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in GetBuses");
+                _logger?.LogError(ex, "Error in GetBuses");
                 result.Success = false;
                 result.Message = "Error in GetBuses";
                 return result;
@@ -101,14 +101,14 @@ namespace BoletosBus_CleanModularApp.Bus.Application.Services
                     Disponible = (bool?)busSaveDto.Disponible
                 };
 
-                _busRepository.Save(bus);
+                _busRepository?.Save(bus);
                 result.Success = true;
                 result.Message = "Bus saved";
                 return result;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in SaveBus");
+                _logger?.LogError(ex, "Error in SaveBus");
                 result.Success = false;
                 result.Message = "Error in SaveBus";
                 return result;
@@ -131,18 +131,17 @@ namespace BoletosBus_CleanModularApp.Bus.Application.Services
                 bus.CapacidadPiso1 = busUpdateDto.CapacidadPiso1;
                 bus.CapacidadPiso2 = busUpdateDto.CapacidadPiso2;
                 bus.Nombre = busUpdateDto.Nombre;
-                bus.FechaModificacion = busUpdateDto.FechaModificacion;
                 bus.NumeroPlaca = busUpdateDto.NumeroPlaca;
                 bus.Disponible = (bool?)busUpdateDto.Disponible;
 
-                _busRepository.Update(bus);
+                _busRepository?.Update(bus);
                 result.Success = true;
                 result.Message = "Bus updated";
                 return result;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in UpdateBus");
+                _logger?.LogError(ex, "Error in UpdateBus");
                 result.Success = false;
                 result.Message = "Error in UpdateBus";
                 return result;

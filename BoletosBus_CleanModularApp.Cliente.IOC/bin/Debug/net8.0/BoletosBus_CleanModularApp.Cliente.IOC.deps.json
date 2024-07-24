@@ -563,7 +563,8 @@
       },
       "BoletosBus_CleanModularApp.Cliente.Application/1.0.0": {
         "dependencies": {
-          "BoletosBus_CleanModularApp.Cliente.Domain": "1.0.0"
+          "BoletosBus_CleanModularApp.Cliente.Domain": "1.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0"
         },
         "runtime": {
           "BoletosBus_CleanModularApp.Cliente.Application.dll": {}

@@ -21,24 +21,30 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
         }
         public List<Domain.Entities.Asiento> GetAll()
         {
+            if (_asientoContext == null)
+            {
+                _logger?.LogError("AsientoContext is null");
+                return new List<Domain.Entities.Asiento>();
+            }
+
             return _asientoContext.Asiento.ToList();
         }
 
-        public Domain.Entities.Asiento GetEntityById(int id)
+        public Domain.Entities.Asiento? GetEntityById(int id)
         {
             try
             {
-                var asiento = _asientoContext.Asiento.Find(id);
+                var asiento = _asientoContext?.Asiento.Find(id);
                 if (asiento is null)
                 {
-                    _logger.LogError($"Asiento with id: {id}, not found");
+                    _logger?.LogError($"Asiento with id: {id}, not found");
                     return null;
                 }
                 return asiento;
             }
             catch
             {
-                this._logger.LogError($"An error occurred while trying to get the asiento with id: {id}");
+                this._logger?.LogError($"An error occurred while trying to get the asiento with id: {id}");
                 throw;
             }
         }
@@ -49,24 +55,24 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
             {
                 if (entity is null)
                 {
-                    _logger.LogError("The entity can't be null");
+                    _logger?.LogError("The entity can't be null");
                     return;
                 }
 
-                var asientoEliminar = this._asientoContext.Asiento.Find(entity.Id);
+                var asientoEliminar = this._asientoContext?.Asiento.Find(entity.Id);
 
                 if (asientoEliminar is null)
                 {
-                    _logger.LogError($"The asiento with id: {entity.Id}, not found");
+                    _logger?.LogError($"The asiento with id: {entity.Id}, not found");
                     return;
                 }
 
-                _asientoContext.Asiento.Remove(asientoEliminar);
-                _asientoContext.SaveChanges();
+                _asientoContext?.Asiento.Remove(asientoEliminar);
+                _asientoContext?.SaveChanges();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occurred while trying to remove the asiento with id: {entity.Id}");
+                _logger?.LogError($"An error occurred while trying to remove the asiento with id: {entity.Id}, " + ex.ToString());
                 throw;
             }
         }
@@ -77,16 +83,16 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
             {
                 if (entity is null)
                 {
-                    _logger.LogError("The entity can't be null");
+                    _logger?.LogError("The entity can't be null");
                     return;
                 }
 
-                _asientoContext.Asiento.Add(entity);
-                _asientoContext.SaveChanges();
+                _asientoContext?.Asiento.Add(entity);
+                _asientoContext?.SaveChanges();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occurred while trying to save the asiento with id: {entity.Id}");
+                _logger?.LogError($"An error occurred while trying to save the asiento with id: {entity.Id}, " + ex.ToString());
                 throw;
             }
         }
@@ -97,15 +103,15 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
             {
                 if (entity is null)
                 {
-                    _logger.LogError("The entity can't be null");
+                    _logger?.LogError("The entity can't be null");
                     return;
                 }
 
-                var asientoActualizar = this._asientoContext.Asiento.Find(entity.Id);
+                var asientoActualizar = this._asientoContext?.Asiento.Find(entity.Id);
 
                 if (asientoActualizar is null)
                 {
-                    _logger.LogError($"The asiento with id: {entity.Id}, not found");
+                    _logger?.LogError($"The asiento with id: {entity.Id}, not found");
                     return;
                 }
 
@@ -118,11 +124,11 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Repositories
 
                 _asientoContext.Entry(asientoActualizar).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
 
-                _asientoContext.SaveChanges();
+                _asientoContext?.SaveChanges();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occurred while trying to update the asiento with id: {entity.Id}");
+                _logger?.LogError($"An error occurred while trying to update the asiento with id: {entity.Id}, " + ex.ToString());
                 throw;
             }
         }

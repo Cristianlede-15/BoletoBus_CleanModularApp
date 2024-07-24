@@ -15,6 +15,5 @@ namespace BoletosBus_CleanModularApp.Cliente.Domain.Entities
         public string? Nombre { get; set; }
         public string? Telefono { get; set; }
         public string? Email { get; set; }
-        public object FechaModificacion { get; set; }
     }
 }

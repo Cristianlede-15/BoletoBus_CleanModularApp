@@ -103,7 +103,6 @@ namespace BoletosBus_CleanModularApp.Cliente.Persistence.Repositories
 
                 clienteActualizar.Email = entity.Email;
                 clienteActualizar.Nombre = entity.Nombre;
-                clienteActualizar.FechaModificacion = entity.FechaModificacion;
                 clienteActualizar.Telefono = entity.Telefono;
 
             } catch (Exception ex) 

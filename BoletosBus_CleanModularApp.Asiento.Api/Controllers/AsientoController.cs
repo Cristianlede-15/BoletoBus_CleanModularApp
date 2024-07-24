@@ -20,7 +20,7 @@ namespace BoletosBus_CleanModularApp.Asiento.Api.Controllers
         public IActionResult Get()
         {
             var result = this._asientoService?.GetAsientos();
-            if (!result.Success)
+            if (result?.Success != true)
             {
                 return BadRequest(result);
             }
@@ -32,7 +32,7 @@ namespace BoletosBus_CleanModularApp.Asiento.Api.Controllers
         public IActionResult Get(int id)
         {
             var result = this._asientoService?.GetAsientoById(id);
-            if (!result.Success)
+            if (result?.Success != true)
             {
                 return BadRequest(result);
             }
@@ -44,7 +44,7 @@ namespace BoletosBus_CleanModularApp.Asiento.Api.Controllers
         public IActionResult Post([FromBody] AsientoSaveDto asientoSaveDto)
         {
             var result = this._asientoService?.SaveAsiento(asientoSaveDto);
-            if (!result.Success)
+            if (result?.Success != true)
             {
                 return BadRequest(result);
             }
@@ -56,7 +56,7 @@ namespace BoletosBus_CleanModularApp.Asiento.Api.Controllers
         public IActionResult post(AsientoUpdateDto asientoUpdateDto)
         {
             var result = this._asientoService?.UpdateAsiento(asientoUpdateDto);
-            if (!result.Success)
+            if (result?.Success != true)
             {
                 return BadRequest(result);
             }
@@ -68,7 +68,7 @@ namespace BoletosBus_CleanModularApp.Asiento.Api.Controllers
         public IActionResult Delete(AsientoDeleteDto asientoDeleteDto)
         {
             var result = this._asientoService?.DeleteAsiento(asientoDeleteDto);
-            if (!result.Success)
+            if (result?.Success != true)
             {
                 return BadRequest(result);
             }

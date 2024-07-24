@@ -10,7 +10,6 @@ namespace BoletosBus_CleanModularApp.Asiento.Persistence.Models
     {
         public int NumeroPiso { get; set; }
         public int NumeroAsiento { get; set; }
-        public int? CapacidadTotal { get; set; }
         public bool? Disponible { get; set; }
         public DateTime? FechaCreacion { get; set; }
     }
