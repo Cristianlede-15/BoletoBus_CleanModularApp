@@ -1,23 +1,26 @@
 ﻿using BoletosBus_CleanModularApp.Web.Models.Base;
 using BoletosBus_CleanModularApp.Web.Models.ClienteModels;
-using Microsoft.AspNetCore.Http;
+using BoletosBus_CleanModularApp.Web.Models.URL_s;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace BoletosBus_CleanModularApp.Web.Controllers
 {
     public class ClienteController : Controller
     {
         private readonly ServicesAPI _services;
+        private readonly ConfigurationURL_s _configurationURL_s;
 
-        public ClienteController(ServicesAPI apiService)
+        public ClienteController(ServicesAPI apiService, IOptions<ConfigurationURL_s> options)
         {
             _services = apiService;
+            _configurationURL_s = options.Value;
         }
 
         // GET: ClienteController
         public async Task<ActionResult> Index()
         {
-            var apiResponse = await _services.GetAsync<List<ClienteAccessModel>>("http://localhost:5231/api/Cliente/GetClientes\r\n");
+            var apiResponse = await _services.GetAsync<List<ClienteAccessModel>>(_configurationURL_s.GetClientes);
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -32,7 +35,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: ClienteController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            var apiResponse = await _services.GetAsync<ClienteAccessModel>($"http://localhost:5231/api/Cliente/GetClienteById?id={id}");
+            var apiResponse = await _services.GetAsync<ClienteAccessModel>(_configurationURL_s.GetClienteById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -60,7 +63,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(clienteCreateModel);
             }
 
-            var apiResponse = await _services.PostAsync("http://localhost:5231/api/Cliente/CreateCliente", clienteCreateModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.SaveCliente, clienteCreateModel);
             if (apiResponse.Success)
             {
                 return RedirectToAction(nameof(Index));
@@ -75,7 +78,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: ClienteController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            var apiResponse = await _services.GetAsync<ClienteAccessModel>($"http://localhost:5231/api/Cliente/GetClienteById?id={id}");
+            var apiResponse = await _services.GetAsync<ClienteAccessModel>(_configurationURL_s.GetClienteById(id));
             if (apiResponse.Success)
             {
                 var clienteUpdateModel = new ClienteUpdateModel
@@ -105,7 +108,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(clienteUpdateModel);
             }
 
-            var apiResponse = await _services.PostAsync($"http://localhost:5231/api/Cliente/UpdateCliente?id={id}", clienteUpdateModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.GetClienteById(id), clienteUpdateModel);
             if (apiResponse.Success)
             {
                 return RedirectToAction(nameof(Index));
@@ -120,7 +123,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: ClienteController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            var apiResponse = await _services.GetAsync<ClienteDeleteModel>($"http://localhost:5231/api/Cliente/GetClienteById?id={id}");
+            var apiResponse = await _services.GetAsync<ClienteDeleteModel>(_configurationURL_s.GetClienteById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -137,7 +140,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Delete(int id, IFormCollection collection)
         {
-            var apiResponse = await _services.DeleteAsync<ClienteDeleteModel>($"http://localhost:5231/api/Cliente/DeleteCliente?id={id}");
+            var apiResponse = await _services.DeleteAsync<ClienteDeleteModel>(_configurationURL_s.GetClienteById(id));
 
             if (apiResponse.Success)
             {

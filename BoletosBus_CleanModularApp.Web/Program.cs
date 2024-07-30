@@ -1,4 +1,6 @@
 using BoletosBus_CleanModularApp.Web.Models.Base;
+using BoletosBus_CleanModularApp.Web.Models.URL_s;
+using System.Configuration;
 
 namespace BoletosBus_CleanModularApp.Web
 {
@@ -11,6 +13,10 @@ namespace BoletosBus_CleanModularApp.Web
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddHttpClient<ServicesAPI>();
+
+            //Registrar URL's de las APIS
+            builder.Services.Configure<ConfigurationURL_s>(builder.Configuration.GetSection("ApiUrls"));
+
 
             var app = builder.Build();
 

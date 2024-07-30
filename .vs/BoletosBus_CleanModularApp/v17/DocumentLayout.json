@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\asiento\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\asiento\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\bus\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\bus\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\asiento\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\asiento\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\bus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\bus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\views\\bus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\views\\bus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|c:\\users\\pc\\source\\repos\\boletosbus_cleanmodularapp\\boletosbus_cleanmodularapp.web\\models\\url\u0027s\\configurationurl\u0027s.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5690E2-74D5-4C12-A4B0-E21AECA5F742}|BoletosBus_CleanModularApp.Web\\BoletosBus_CleanModularApp.Web.csproj|solutionrelative:boletosbus_cleanmodularapp.web\\models\\url\u0027s\\configurationurl\u0027s.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,106 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Edit.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:54:14.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Edit.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Edit.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAABgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:53:08.057Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\appsettings.json",
+              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-30T22:38:31.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Delete.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Delete.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Delete.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:45:42.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Details.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Details.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Details.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Cliente\\Details.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:44:16.165Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Program.cs",
+              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:34:42.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Details.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Details.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Details.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Details.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADsAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:34:26.996Z",
+              "Title": "ConfigurationURL\u0027s.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Models\\URL\u0027s\\ConfigurationURL\u0027s.cs",
+              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Models\\URL\u0027s\\ConfigurationURL\u0027s.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Models\\URL\u0027s\\ConfigurationURL\u0027s.cs",
+              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Models\\URL\u0027s\\ConfigurationURL\u0027s.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:34:38.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Details.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Details.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Details.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Asiento\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:34:22.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Edit.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Edit.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:26:55.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Index.cshtml",
-              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Views\\Bus\\Index.cshtml",
-              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Views\\Bus\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T19:22:42.577Z",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "BoletosBus_CleanModularApp.Web\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\BoletosBus_CleanModularApp\\BoletosBus_CleanModularApp.Web\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "BoletosBus_CleanModularApp.Web\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwJAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:30:52.264Z",
               "EditorCaption": ""
             }
           ]

@@ -1,23 +1,26 @@
 ﻿using BoletosBus_CleanModularApp.Web.Models.Base;
 using BoletosBus_CleanModularApp.Web.Models.BusModels;
-using Microsoft.AspNetCore.Http;
+using BoletosBus_CleanModularApp.Web.Models.URL_s;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace BoletosBus_CleanModularApp.Web.Controllers
 {
     public class BusController : Controller
     {
         private readonly ServicesAPI _services;
+        private readonly ConfigurationURL_s _configurationURL_s;
 
-        public BusController(ServicesAPI apiService)
+        public BusController(ServicesAPI apiService, IOptions<ConfigurationURL_s> options)
         {
             _services = apiService;
+            _configurationURL_s = options.Value;
         }
 
         // GET: BusController
         public async Task<ActionResult> Index()
         {
-            var apiResponse = await _services.GetAsync<List<BusGetModel>>("http://localhost:5005/api/Bus/GetBuses");
+            var apiResponse = await _services.GetAsync<List<BusGetModel>>(_configurationURL_s.GetBuses);
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -32,7 +35,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            var apiResponse = await _services.GetAsync<BusGetModel>($"http://localhost:5005/api/Bus/GetBusById?id={id}");
+            var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -60,7 +63,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(busCreateModel);
             }
 
-            var apiResponse = await _services.PostAsync("http://localhost:5005/api/Bus", busCreateModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.SaveBus, busCreateModel);
 
             if (apiResponse.Success)
             {
@@ -76,7 +79,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            var apiResponse = await _services.GetAsync<BusGetModel>($"http://localhost:5005/api/Bus/GetBusById?id={id}");
+            var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
             if (apiResponse.Success)
             {
                 var busUpdateModel = new BusUpdateModel
@@ -109,7 +112,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(busUpdateModel);
             }
 
-            var apiResponse = await _services.PostAsync($"http://localhost:5005/api/Bus/UpdateBus?id={id}", busUpdateModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.GetBusById(id), busUpdateModel);
 
             if (apiResponse.Success)
             {
@@ -125,7 +128,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            var apiResponse = await _services.GetAsync<BusDeleteModel>($"http://localhost:5005/api/Bus/GetBusById?id={id}");
+            var apiResponse = await _services.GetAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -142,7 +145,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Delete(int id, IFormCollection collection)
         {
-            var apiResponse = await _services.DeleteAsync<BusDeleteModel>($"http://localhost:5005/api/Bus/DeleteBus?id={id}");
+            var apiResponse = await _services.DeleteAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
 
             if (apiResponse.Success)
             {

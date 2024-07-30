@@ -1,27 +1,26 @@
 ﻿using BoletosBus_CleanModularApp.Web.Models.AsientoModels;
 using BoletosBus_CleanModularApp.Web.Models.Base;
-using Microsoft.AspNetCore.Http;
+using BoletosBus_CleanModularApp.Web.Models.URL_s;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System.Net;
-using System.Reflection;
-using System.Text;
+using Microsoft.Extensions.Options;
 
 namespace BoletosBus_CleanModularApp.Web.Controllers
 {
     public class AsientoController : Controller
     {
         private readonly ServicesAPI _services;
+        private readonly ConfigurationURL_s _configurationURL_s;
 
-        public AsientoController(ServicesAPI apiService)
+        public AsientoController(ServicesAPI apiService, IOptions<ConfigurationURL_s> options)
         {
             _services = apiService;
+            _configurationURL_s = options.Value;
         }
 
         // GET: AsientoController
         public async Task<ActionResult> Index()
         {
-            var apiResponse = await _services.GetAsync<List<AsientoGetModel>>("http://localhost:5254/api/Asiento/GetAsientos");
+            var apiResponse = await _services.GetAsync<List<AsientoGetModel>>(_configurationURL_s.GetAsientos);
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -36,7 +35,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: AsientoController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            var apiResponse = await _services.GetAsync<AsientoGetModel>($"http://localhost:5254/api/Asiento/GetAsientoById?id={id}");
+            var apiResponse = await _services.GetAsync<AsientoGetModel>(_configurationURL_s.GetAsientoById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -64,7 +63,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(asientoSaveModel);
             }
 
-            var apiResponse = await _services.PostAsync("http://localhost:5254/api/Asiento/SaveAsiento", asientoSaveModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.SaveAsiento, asientoSaveModel);
 
             if (apiResponse.Success)
             {
@@ -80,7 +79,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: AsientoController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            var apiResponse = await _services.GetAsync<AsientoGetModel>($"http://localhost:5254/api/Asiento/GetAsientoById?id={id}");
+            var apiResponse = await _services.GetAsync<AsientoGetModel>(_configurationURL_s.GetAsientoById(id));
             if (apiResponse.Success)
             {
                 var asientoUpdateModel = new AsientoUpdateModel
@@ -111,7 +110,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
                 return View(asientoUpdateModel);
             }
 
-            var apiResponse = await _services.PostAsync($"http://localhost:5254/api/Asiento/UpdateAsiento?id={id}", asientoUpdateModel);
+            var apiResponse = await _services.PostAsync(_configurationURL_s.GetAsientoById(id), asientoUpdateModel);
 
             if (apiResponse.Success)
             {
@@ -127,7 +126,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: AsientoController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            var apiResponse = await _services.GetAsync<AsientoDeleteModel>($"http://localhost:5254/api/Asiento/GetAsientoById?id={id}");
+            var apiResponse = await _services.GetAsync<AsientoDeleteModel>(_configurationURL_s.GetAsientoById(id));
             if (apiResponse.Success)
             {
                 return View(apiResponse.Data);
@@ -144,7 +143,7 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Delete(int id, IFormCollection collection)
         {
-            var apiResponse = await _services.DeleteAsync<AsientoDeleteModel>($"http://localhost:5254/api/Asiento/DeleteAsiento?id={id}");
+            var apiResponse = await _services.DeleteAsync<AsientoDeleteModel>(_configurationURL_s.GetAsientoById(id));
 
             if (apiResponse.Success)
             {
