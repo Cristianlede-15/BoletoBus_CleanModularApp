@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoletosBus_CleanModularApp.Cliente.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bf2245b4bc64cd3aa2583e3574ccf5e4be5d888")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f469ecb3160fe631e36f81f91397884baf575d53")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoletosBus_CleanModularApp.Cliente.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoletosBus_CleanModularApp.Cliente.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,14 +20,22 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController
         public async Task<ActionResult> Index()
         {
-            var apiResponse = await _services.GetAsync<List<BusGetModel>>(_configurationURL_s.GetBuses);
-            if (apiResponse.Success)
+            try
             {
-                return View(apiResponse.Data);
+                var apiResponse = await _services.GetAsync<List<BusGetModel>>(_configurationURL_s.GetBuses);
+                if (apiResponse.Success)
+                {
+                    return View(apiResponse.Data);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return View(new List<BusGetModel>());
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while fetching data: " + ex.Message);
                 return View(new List<BusGetModel>());
             }
         }
@@ -35,14 +43,22 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
-            if (apiResponse.Success)
+            try
             {
-                return View(apiResponse.Data);
+                var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
+                if (apiResponse.Success)
+                {
+                    return View(apiResponse.Data);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return NotFound();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while fetching data: " + ex.Message);
                 return NotFound();
             }
         }
@@ -58,20 +74,28 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(BusCreateModel busCreateModel)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return View(busCreateModel);
-            }
+                if (!ModelState.IsValid)
+                {
+                    return View(busCreateModel);
+                }
 
-            var apiResponse = await _services.PostAsync(_configurationURL_s.SaveBus, busCreateModel);
+                var apiResponse = await _services.PostAsync(_configurationURL_s.SaveBus, busCreateModel);
 
-            if (apiResponse.Success)
-            {
-                return RedirectToAction(nameof(Index));
+                if (apiResponse.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return View(busCreateModel);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while saving data: " + ex.Message);
                 return View(busCreateModel);
             }
         }
@@ -79,25 +103,32 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
-            if (apiResponse.Success)
+            try
             {
-                var busUpdateModel = new BusUpdateModel
+                var apiResponse = await _services.GetAsync<BusGetModel>(_configurationURL_s.GetBusById(id));
+                if (apiResponse.Success)
                 {
-                    IdBus = apiResponse.Data.IdBus,
-                    NumeroPlaca = apiResponse.Data.NumeroPlaca,
-                    Nombre = apiResponse.Data.Nombre,
-                    CapacidadPiso1 = apiResponse.Data.CapacidadPiso1,
-                    CapacidadPiso2 = apiResponse.Data.CapacidadPiso2,
-                    Disponible = apiResponse.Data.Disponible
+                    var busUpdateModel = new BusUpdateModel
+                    {
+                        IdBus = apiResponse.Data.IdBus,
+                        NumeroPlaca = apiResponse.Data.NumeroPlaca,
+                        Nombre = apiResponse.Data.Nombre,
+                        CapacidadPiso1 = apiResponse.Data.CapacidadPiso1,
+                        CapacidadPiso2 = apiResponse.Data.CapacidadPiso2,
+                        Disponible = apiResponse.Data.Disponible
+                    };
 
-                };
-
-                return View(busUpdateModel);
+                    return View(busUpdateModel);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return NotFound();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while fetching data: " + ex.Message);
                 return NotFound();
             }
         }
@@ -107,20 +138,28 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(int id, BusUpdateModel busUpdateModel)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return View(busUpdateModel);
-            }
+                if (!ModelState.IsValid)
+                {
+                    return View(busUpdateModel);
+                }
 
-            var apiResponse = await _services.PostAsync(_configurationURL_s.GetBusById(id), busUpdateModel);
+                var apiResponse = await _services.PostAsync(_configurationURL_s.GetBusById(id), busUpdateModel);
 
-            if (apiResponse.Success)
-            {
-                return RedirectToAction(nameof(Index));
+                if (apiResponse.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return View(busUpdateModel);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while updating data: " + ex.Message);
                 return View(busUpdateModel);
             }
         }
@@ -128,14 +167,22 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         // GET: BusController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            var apiResponse = await _services.GetAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
-            if (apiResponse.Success)
+            try
             {
-                return View(apiResponse.Data);
+                var apiResponse = await _services.GetAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
+                if (apiResponse.Success)
+                {
+                    return View(apiResponse.Data);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return NotFound();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while fetching data: " + ex.Message);
                 return NotFound();
             }
         }
@@ -145,15 +192,23 @@ namespace BoletosBus_CleanModularApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Delete(int id, IFormCollection collection)
         {
-            var apiResponse = await _services.DeleteAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
+            try
+            {
+                var apiResponse = await _services.DeleteAsync<BusDeleteModel>(_configurationURL_s.GetBusById(id));
 
-            if (apiResponse.Success)
-            {
-                return RedirectToAction(nameof(Index));
+                if (apiResponse.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, apiResponse.Message);
+                    return View();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, apiResponse.Message);
+                ModelState.AddModelError(string.Empty, "An error occurred while deleting data: " + ex.Message);
                 return View();
             }
         }
